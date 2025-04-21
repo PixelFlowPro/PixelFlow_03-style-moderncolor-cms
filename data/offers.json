@@ -1,0 +1,347 @@
+[
+  {
+    "name": "ajouts-personnalises",
+    "path": "/data/offers/ajouts-personnalises.md",
+    "metadata": {
+      "icon": "fas fa-tools",
+      "color": "text-yellow-500",
+      "title": "Ajouts personnalisés",
+      "quote": "Besoin d’un petit plus ? C’est possible.",
+      "description": "Fonctionnalités sur mesure pour enrichir votre site (landing page ou multipage). Idéal pour ajouter des éléments spécifiques à vos besoins.",
+      "duration": "2-5 jours",
+      "price": "140€ - 350€",
+      "included": [
+        "Développement de la fonctionnalité demandée",
+        "Tests pour compatibilité (mobile, desktop)",
+        "Intégration au site existant"
+      ],
+      "examples": [
+        "Formulaire complexe : prise de rendez-vous avec choix de créneaux pour un coach",
+        "FAQ dynamique : questions/réponses déroulantes pour un commerce",
+        "Section blog : articles rédigés automatiquement depuis Airtable pour une PME",
+        "Portfolio interactif : galerie de photos avec filtres pour un artisan",
+        "Mini-forum : espace commentaires pour une communauté locale"
+      ],
+      "benefits": [
+        "Un site qui correspond exactement à vos besoins",
+        "Fonctionnalités évolutives pour suivre votre croissance",
+        "Intégration fluide sans refonte complète"
+      ],
+      "options": [
+        "Connexion à une API (ex. : formulaire vers Airtable) (+120€)",
+        "Création de contenu pour la fonctionnalité (+120€)",
+        "Formation 1h pour gérer la fonctionnalité (+60€)",
+        "Maintenance mensuelle (+60€/mois)"
+      ],
+      "category": "web"
+    },
+    "body": ""
+  },
+  {
+    "name": "automatisation-de-taches",
+    "path": "/data/offers/automatisation-de-taches.md",
+    "metadata": {
+      "icon": "fas fa-tasks",
+      "color": "text-green-500",
+      "title": "Automatisation de tâches",
+      "quote": "Relances mails, rapports automatiques, rappels Slack pendant votre pause café.",
+      "description": "Automatisation de tâches récurrentes pour fluidifier vos opérations. Ce service va au-delà des simples fichiers pour inclure des interactions avec des outils comme Slack, Teams ou Gmail.",
+      "duration": "5-7 jours",
+      "price": "400€ - 560€",
+      "included": [
+        "Script Python avec connexion à un outil (ex. : Slack, Gmail)",
+        "Tests unitaires pour fiabilité",
+        "Documentation claire (guide d’utilisation)"
+      ],
+      "examples": [
+        "Envoi automatique d’emails de relance à des clients via Gmail ou Lemlist",
+        "Notifications Slack quotidiennes pour signaler de nouveaux paiements via Stripe",
+        "Génération et envoi de rapports de ventes hebdomadaires à une équipe",
+        "Rappels automatiques sur Teams pour des échéances de projets"
+      ],
+      "benefits": [
+        "Moins de tâches manuelles, plus de temps pour l’essentiel",
+        "Communication automatisée avec vos équipes ou clients",
+        "Fiabilité garantie grâce à des tests rigoureux"
+      ],
+      "options": [
+        "Connexion à plusieurs outils (ex. : Slack + Gmail) (+120€)",
+        "Planification avancée (ex. : déclenchements horaires) (+60€)",
+        "Formation 1h pour comprendre et ajuster (+60€)",
+        "Maintenance mensuelle (+80€/mois)"
+      ],
+      "category": "auto"
+    },
+    "body": ""
+  },
+  {
+    "name": "connexion-api",
+    "path": "/data/offers/connexion-api.md",
+    "metadata": {
+      "icon": "fas fa-plug",
+      "color": "text-green-500",
+      "title": "Connexion API",
+      "quote": "Airtable, Notion, Google Sheets ? Faites-les collaborer efficacement.",
+      "description": "Intégration d’API pour connecter vos outils SaaS et automatiser les échanges de données. Parfait pour synchroniser des workflows entre plusieurs plateformes.",
+      "duration": "7-10 jours",
+      "price": "560€ - 800€",
+      "included": [
+        "Connexion à une ou deux API (ex. : HubSpot, Stripe)",
+        "Tests approfondis pour éviter les erreurs",
+        "Documentation détaillée (schéma du workflow)",
+        "Déploiement initial (ex. : serveur local ou cloud)"
+      ],
+      "examples": [
+        "Synchronisation des contacts HubSpot vers Google Sheets pour des rapports marketing",
+        "Importation automatique des paiements Stripe dans Airtable",
+        "Connexion de l’API La Poste pour suivi des livraisons dans Google Sheets",
+        "Intégration Lemlist avec un CRM pour automatiser des campagnes emailing"
+      ],
+      "benefits": [
+        "Vos outils travaillent ensemble, sans intervention manuelle",
+        "Gain de temps sur la gestion des données",
+        "Solution évolutive pour ajouter d’autres connexions"
+      ],
+      "options": [
+        "Connexion à une API supplémentaire (+150€)",
+        "Dashboard simple (Flask/Streamlit) pour visualiser les données (+250€)",
+        "Formation 1h pour l’équipe (+60€)",
+        "Maintenance mensuelle (vérifications, mises à jour) (+100€/mois)"
+      ],
+      "category": "auto"
+    },
+    "body": ""
+  },
+  {
+    "name": "dashboard-personnalise",
+    "path": "/data/offers/dashboard-personnalise.md",
+    "metadata": {
+      "icon": "fas fa-chart-line",
+      "color": "text-green-500",
+      "title": "Dashboard personnalisé",
+      "quote": "Votre tableau de bord sur mesure pour superviser vos outils.",
+      "description": "Un tableau de bord interactif (via Flask, FastAPI ou Streamlit) pour visualiser vos données en temps réel et piloter vos processus. Idéal pour les PME qui veulent centraliser leurs informations.",
+      "duration": "18-30 jours",
+      "price": "1440€ - 2400€",
+      "included": [
+        "Développement d’une interface web simple",
+        "Connexion à 1-2 sources de données (API, Airtable, Google Sheets)",
+        "Visualisations (graphiques, tableaux)",
+        "Tests et documentation",
+        "Déploiement (Vercel, Google Cloud ou local)"
+      ],
+      "examples": [
+        "Dashboard marketing : suivi HubSpot (ventes, clics)",
+        "Tableau de bord restaurant : réservations et annulations en temps réel",
+        "Interface PME : suivi Stripe + La Poste",
+        "Dashboard indépendant : KPIs depuis Airtable"
+      ],
+      "benefits": [
+        "Toutes vos données accessibles en un clic",
+        "Prise de décision facilitée grâce à des visualisations claires",
+        "Interface intuitive, même pour les non-techniques"
+      ],
+      "options": [
+        "Connexion à une source supplémentaire (+150€)",
+        "Alertes personnalisées (ex. : email si seuil atteint) (+120€)",
+        "Formation 1h pour utiliser le dashboard (+60€)",
+        "Maintenance mensuelle (mises à jour, support) (+100€/mois)"
+      ],
+      "category": "auto"
+    },
+    "body": ""
+  },
+  {
+    "name": "gestion-de-donnees",
+    "path": "/data/offers/gestion-de-donnees.md",
+    "metadata": {
+      "icon": "fas fa-database",
+      "color": "text-green-500",
+      "title": "Gestion de données",
+      "quote": "Vos bases synchronisées, filtrées et exportées facilement.",
+      "description": "Service dédié à la manipulation et l’organisation de bases de données (CSV, JSON, Airtable, PostgreSQL). Idéal pour nettoyer, fusionner ou exporter des données complexes.",
+      "duration": "7-10 jours",
+      "price": "560€ - 800€",
+      "included": [
+        "Script Python pour traiter les données",
+        "Connexion à une base (ex. : Airtable, Google Sheets)",
+        "Tests pour garantir l’intégrité des données",
+        "Documentation (ex. : explication des filtres appliqués)"
+      ],
+      "examples": [
+        "Nettoyage et standardisation d’une base clients pour une PME",
+        "Fusion de fichiers CSV fournisseurs en une base Airtable unique",
+        "Export automatisé des ventes quotidiennes vers un rapport Google Sheets",
+        "Filtrage des données marketing pour une campagne ciblée"
+      ],
+      "benefits": [
+        "Données propres et prêtes à l’emploi",
+        "Réduction des erreurs dans vos analyses",
+        "Automatisation des mises à jour"
+      ],
+      "options": [
+        "Connexion à une base supplémentaire (ex. : PostgreSQL) (+120€)",
+        "Export vers formats spécifiques (PDF, JSON) (+60€)",
+        "Formation 1h pour gérer la base (+60€)",
+        "Maintenance mensuelle (+80€/mois)"
+      ],
+      "category": "auto"
+    },
+    "body": ""
+  },
+  {
+    "name": "landing-page",
+    "path": "/data/offers/landing-page.md",
+    "metadata": {
+      "icon": "fas fa-globe",
+      "color": "text-yellow-500",
+      "title": "Landing Page",
+      "quote": "Une seule page, un seul objectif, zéro complexité.",
+      "description": "Une page web unique pour promouvoir un service, un produit ou capter des leads. Parfait pour une visibilité rapide sans budget élevé.",
+      "duration": "4-6 jours",
+      "price": "280€ - 420€",
+      "included": [
+        "Design simple et responsive (HTML/CSS/JS)",
+        "Contenu fourni par le client (textes, images)",
+        "Optimisation mobile",
+        "Déploiement sur Netlify ou Vercel"
+      ],
+      "examples": [
+        "Landing page pour un restaurant : menu, horaires, plan d’accès",
+        "Page pour une consultante : présentation, témoignage, formulaire de contact",
+        "Page pour un artisan : description des services, photos de réalisations, numéro WhatsApp",
+        "Page pour un événement : programme, inscription via formulaire"
+      ],
+      "benefits": [
+        "Visibilité immédiate sur le web",
+        "Design clair et professionnel à petit prix",
+        "Facile à partager (réseaux sociaux, cartes de visite)"
+      ],
+      "options": [
+        "Formulaire de contact ou inscription simple (+40€)",
+        "Intégration Google Analytics (+40€)",
+        "Création de contenu (textes, FAQ) (+60€)",
+        "Optimisation SEO de base (+60€)",
+        "Maintenance mensuelle (mises à jour mineures) (+60€/mois)"
+      ],
+      "category": "web"
+    },
+    "body": ""
+  },
+  {
+    "name": "script-simple",
+    "path": "/data/offers/script-simple.md",
+    "metadata": {
+      "icon": "fas fa-file-excel",
+      "color": "text-green-500",
+      "title": "Script Simple",
+      "quote": "Un fichier Excel propre, classé, renommé, prêt pour l'action.",
+      "description": "Un script Python rapide pour automatiser une tâche spécifique liée à la gestion de données. Idéal pour nettoyer, organiser ou convertir des fichiers sans effort.",
+      "duration": "3-5 jours",
+      "price": "240€ - 400€",
+      "included": [
+        "Script Python personnalisé",
+        "Test initial pour garantir le fonctionnement",
+        "Documentation de base (comment lancer le script)"
+      ],
+      "examples": [
+        "Nettoyage automatique d’un fichier CSV avec suppression des doublons et formatage des dates",
+        "Conversion d’un rapport PDF en Excel structuré pour un indépendant",
+        "Renommage et classement automatique de fichiers téléchargés (ex. : factures fournisseurs)",
+        "Génération de rapports standardisés à partir de données brutes pour une PME"
+      ],
+      "benefits": [
+        "Élimine les tâches manuelles répétitives",
+        "Résultats rapides pour un budget maîtrisé",
+        "Solution autonome, facile à réutiliser"
+      ],
+      "options": [
+        "Intégration à Google Sheets ou Airtable (+60€)",
+        "Planification automatique (ex. : exécution quotidienne) (+40€)",
+        "Formation 1h pour modifier le script soi-même (+60€)",
+        "Maintenance mensuelle (corrections, ajustements) (+60€/mois)"
+      ],
+      "category": "auto"
+    },
+    "body": ""
+  },
+  {
+    "name": "site-multi-pages",
+    "path": "/data/offers/site-multi-pages.md",
+    "metadata": {
+      "icon": "fas fa-layer-group",
+      "color": "text-yellow-500",
+      "title": "Site Multi-pages",
+      "quote": "Pour ceux qui ont plus à dire (et à montrer).",
+      "description": "Un site complet avec plusieurs pages pour présenter votre activité en détail. Idéal pour les PME ou indépendants qui veulent une présence digitale structurée.",
+      "duration": "8-12 jours",
+      "price": "560€ - 840€",
+      "included": [
+        "Jusqu’à 4 pages (ex. : Accueil, Services, À propos, Contact)",
+        "Design responsive (mobile et desktop)",
+        "Navigation fluide (menu clair)",
+        "Contenu fourni par le client",
+        "Déploiement sur Netlify ou Vercel"
+      ],
+      "examples": [
+        "Site pour un artisan : page d’accueil, portfolio de projets, services, formulaire de devis",
+        "Site pour une PME : accueil, équipe, services, blog avec actualités",
+        "Site pour un formateur : cours proposés, témoignages, FAQ, contact",
+        "Site pour un commerce local : produits, horaires, page “Notre histoire"
+      ],
+      "benefits": [
+        "Une vitrine complète pour votre activité",
+        "Structure claire pour guider vos visiteurs",
+        "Évolutif pour ajouter des pages ou fonctionnalités"
+      ],
+      "options": [
+        "Formulaire avancé (ex. : prise de rendez-vous) (+80€)",
+        "Section blog ou actualités (+120€)",
+        "Création de contenu (textes, articles de blog, faq) (+120€)",
+        "Optimisation SEO avancée (+120€)",
+        "Maintenance mensuelle (contenu, sauvegardes) (+80€/mois)"
+      ],
+      "category": "web"
+    },
+    "body": ""
+  },
+  {
+    "name": "workflow-complet",
+    "path": "/data/offers/workflow-complet.md",
+    "metadata": {
+      "icon": "fas fa-project-diagram",
+      "color": "text-green-500",
+      "title": "Workflow complet",
+      "quote": "Un bot autonome pour gérer votre process pendant que vous profitez.",
+      "description": "Une solution tout-en-un pour automatiser un processus métier complexe, avec plusieurs étapes, outils et gestion des erreurs. Parfait pour les PME avec des besoins avancés.",
+      "duration": "18-30 jours",
+      "price": "1440€ - 2400€",
+      "included": [
+        "Développement sur mesure (Python, Flask/FastAPI)",
+        "Connexion à plusieurs outils/APIs (ex. : CRM, Slack, facturation)",
+        "Gestion des erreurs (notifications en cas de problème)",
+        "Tests approfondis et documentation détaillée",
+        "Déploiement (local ou cloud)"
+      ],
+      "examples": [
+        "Automatisation des réservations pour un restaurant : formulaire → calendrier → Slack",
+        "Workflow logistique : suivi API La Poste, MAJ Airtable, alertes en cas de retard",
+        "Processus marketing : HubSpot → Lemlist → Evoliz",
+        "Suivi de paiements : Stripe → Airtable → rappels Slack"
+      ],
+      "benefits": [
+        "Un processus entier géré automatiquement",
+        "Moins de stress grâce à la gestion des erreurs",
+        "Solution robuste pour un usage à long terme"
+      ],
+      "options": [
+        "Dashboard interactif pour superviser le workflow (+300€)",
+        "Intégration base de données complexe (PostgreSQL) (+200€)",
+        "Formation 2h pour l’équipe (+120€)",
+        "Maintenance mensuelle (support prioritaire) (+150€/mois)"
+      ],
+      "category": "auto"
+    },
+    "body": ""
+  }
+]

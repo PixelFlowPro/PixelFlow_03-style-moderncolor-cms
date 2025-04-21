@@ -1,0 +1,66 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+collections:
+  - name: "offers"
+    label: "Offres"
+    folder: "data/offers"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Icône", name: "icon", widget: "string", default: "fas fa-code" }
+      - { label: "Couleur", name: "color", widget: "select", options: ["text-green-500", "text-yellow-500", "text-blue-500", "text-red-500"] }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Citation", name: "quote", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Durée", name: "duration", widget: "string" }
+      - { label: "Prix", name: "price", widget: "string" }
+      - { label: "Inclus", name: "included", widget: "list", field: { label: "Élément", name: "item", widget: "string" } }
+      - { label: "Exemples", name: "examples", widget: "list", field: { label: "Exemple", name: "example", widget: "string" } }
+      - { label: "Bénéfices", name: "benefits", widget: "list", field: { label: "Bénéfice", name: "benefit", widget: "string" } }
+      - { label: "Options", name: "options", widget: "list", field: { label: "Option", name: "option", widget: "string" } }
+      - { label: "Catégorie", name: "category", widget: "select", options: ["auto", "web"] }
+  - name: "projects"
+    label: "Projets"
+    folder: "data/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Description", name: "desc", widget: "text" }
+      - { label: "Miniature", name: "miniature", widget: "image", required: false }
+      - { label: "Icône", name: "icon", widget: "string", default: "fas fa-project-diagram" }
+      - { label: "Type", name: "type", widget: "select", options: ["auto", "site"] }
+      - { label: "Lien GitHub", name: "github", widget: "string", required: false }
+      - { label: "Lien Démo", name: "demo", widget: "string", required: false }
+      - { label: "Détails", name: "details", widget: "object", fields: [
+          { label: "Contexte", name: "context", widget: "text" },
+          { label: "Problématique", name: "problematique", widget: "text" },
+          { label: "Solution", name: "solution", widget: "text" },
+          { label: "Gains", name: "gain", widget: "list", field: { label: "Gain", name: "gain", widget: "string" } },
+          { label: "Technologies", name: "technologies", widget: "list", field: { label: "Technologie", name: "technologie", widget: "string" } }
+        ]}
+  - name: "skills"
+    label: "Compétences"
+    folder: "data/skills"
+    create: false
+    delete: false
+    file: "data/skills/skills.md"
+    fields:
+      - label: "Catégories de compétences"
+        name: "skillCategories"
+        widget: "list"
+        fields:
+          - { label: "Catégorie", name: "category", widget: "string" }
+          - { label: "Icône", name: "icon", widget: "string", default: "fas fa-code" }
+          - { label: "Couleur", name: "color", widget: "string", default: "backend" }
+          - label: "Compétences"
+            name: "skills"
+            widget: "list"
+            fields:
+              - { label: "Nom", name: "name", widget: "string" }
+              - { label: "Pourcentage", name: "percent", widget: "number" }
+              - { label: "Icône", name: "icon", widget: "string", default: "fas fa-code" }
+              - { label: "Couleur de l'icône", name: "iconColor", widget: "string", default: "text-gray-500" }

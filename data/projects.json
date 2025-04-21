@@ -1,0 +1,221 @@
+[
+  {
+    "name": "agregation-donnees-produits",
+    "path": "/data/projects/agregation-donnees-produits.md",
+    "metadata": {
+      "title": "Agrégation et standardisation des données produits",
+      "desc": "Collecte, standardisation et enrichissement des données produits de multiples fournisseurs pour un catalogue centralisé dans Airtable.",
+      "miniature": "img/gsheet-airtable.png",
+      "icon": "fas fa-database",
+      "type": "auto",
+      "github": "https://github.com/Laseguue/Vide.git",
+      "demo": "#",
+      "details": {
+        "context": "Une entreprise utilise Airtable comme base de données centrale pour gérer son catalogue de produits provenant de plusieurs fournisseurs. Les données doivent être collectées, standardisées et enrichies pour être exploitables dans Airtable et affichées sur un front.",
+        "problematique": "Les fournisseurs fournissent leurs données via des méthodes hétérogènes (API, téléchargement, scraping). Les formats varient, nécessitant une standardisation. Les images produits doivent être scrapées et stockées, et des informations analytiques extraites.",
+        "solution": "Développement d’un programme Python sur Google Cloud Functions pour collecter les données (API, téléchargement, scraping), standardiser les formats, scraper et stocker les images sur Google Cloud Storage, et envoyer les données enrichies à Airtable.",
+        "gain": [
+          "Centralisation et homogénéisation des données produits.",
+          "Automatisation réduisant les erreurs et le temps de gestion.",
+          "Catalogue enrichi avec images, améliorant l’expérience utilisateur.",
+          "Extraction d’informations pour analyses internes."
+        ],
+        "technologies": [
+          "Python",
+          "Google Cloud Functions",
+          "Google Cloud Storage",
+          "Airtable API",
+          "BeautifulSoup",
+          "Selenium"
+        ]
+      }
+    },
+    "body": ""
+  },
+  {
+    "name": "creation-factures-api",
+    "path": "/data/projects/creation-factures-api.md",
+    "metadata": {
+      "title": "Création automatique de factures via API",
+      "desc": "Automatisation de la génération de factures sur Evoliz/Regate à partir des transactions d’une base de données.",
+      "miniature": "img/regate-evoliz.png",
+      "icon": "fas fa-file-invoice",
+      "type": "auto",
+      "github": "https://github.com/Laseguue/Vide.git",
+      "demo": "#",
+      "details": {
+        "context": "Une entreprise utilise une base de données (Airtable ou similaire) pour gérer ses transactions clients. Elle souhaite automatiser la création de factures sur des plateformes comme Evoliz ou Regate en temps réel.",
+        "problematique": "La création manuelle de factures est inefficace et sujette aux erreurs. Une solution est nécessaire pour extraire les données transactionnelles et générer des factures automatiquement via les APIs des plateformes.",
+        "solution": "Développement d’un script Python sur Google Cloud Functions, déclenché par une requête HTTP (nouvelle transaction). Le script récupère les données, formate les informations et utilise les APIs d’Evoliz/Regate pour créer les factures.",
+        "gain": [
+          "Automatisation complète, réduisant le temps de traitement.",
+          "Fiabilité accrue grâce à l’élimination des erreurs manuelles.",
+          "Factures générées en temps réel, améliorant les processus comptables."
+        ],
+        "technologies": [
+          "Python",
+          "Google Cloud Functions",
+          "Airtable API",
+          "Evoliz API",
+          "Regate API"
+        ]
+      }
+    },
+    "body": ""
+  },
+  {
+    "name": "generation-etiquettes-ups",
+    "path": "/data/projects/generation-etiquettes-ups.md",
+    "metadata": {
+      "title": "Génération et suivi d’étiquettes UPS via Airtable",
+      "desc": "Automatisation de la création d’étiquettes UPS et du suivi des colis à partir des commandes dans Airtable.",
+      "miniature": "img/ups.png",
+      "icon": "fas fa-shipping-fast",
+      "type": "auto",
+      "github": "https://github.com/Laseguue/Vide.git",
+      "demo": "#",
+      "details": {
+        "context": "Une entreprise gère ses commandes via Airtable connecté à un front web. Elle a besoin de générer automatiquement des étiquettes UPS et de suivre les livraisons.",
+        "problematique": "La création manuelle d’étiquettes et le suivi des colis sont chronophages. Une automatisation est nécessaire pour générer les étiquettes et mettre à jour les statuts.",
+        "solution": "Développement de deux scripts Python sur Google Cloud Functions, un script déclenché par Airtable pour générer une étiquette UPS, et un script planifié pour mettre à jour les statuts de suivi dans Airtable.",
+        "gain": [
+          "Automatisation complète, réduisant les tâches manuelles.",
+          "Mise à jour en temps réel des statuts dans Airtable.",
+          "Amélioration de l’expérience client avec un suivi précis."
+        ],
+        "technologies": [
+          "Python",
+          "Google Cloud Functions",
+          "Airtable API",
+          "UPS API",
+          "Google Cloud Storage"
+        ]
+      }
+    },
+    "body": ""
+  },
+  {
+    "name": "notification-slack-paiements",
+    "path": "/data/projects/notification-slack-paiements.md",
+    "metadata": {
+      "title": "Notification Slack des paiements via webhooks",
+      "desc": "Centralisation des notifications de paiement de multiples services dans un canal Slack via un serveur Flask.",
+      "miniature": "img/stripe-fintecture.png",
+      "icon": "fas fa-bell",
+      "type": "auto",
+      "github": "https://github.com/Laseguue/Vide.git",
+      "demo": "#",
+      "details": {
+        "context": "Une entreprise utilise plusieurs services de paiement (Stripe, PayPal) et souhaite centraliser les notifications dans un canal Slack pour un suivi en temps réel.",
+        "problematique": "Les services envoient des notifications via webhooks, mais il n’existe pas de système centralisé pour les regrouper dans Slack. Une solution est nécessaire pour collecter, traiter et formater ces notifications.",
+        "solution": "Développement d’un serveur Flask en Python sur Google Cloud Functions, agissant comme point d’entrée pour les webhooks. Le script traite les données et envoie des notifications formatées via l’API Slack.",
+        "gain": [
+          "Centralisation des notifications dans un canal Slack unique.",
+          "Réactivité accrue grâce à des alertes en temps réel.",
+          "Solution légère et scalable pour plusieurs services."
+        ],
+        "technologies": [
+          "Python",
+          "Flask",
+          "Google Cloud Functions",
+          "Slack API",
+          "Stripe API",
+          "PayPal API"
+        ]
+      }
+    },
+    "body": ""
+  },
+  {
+    "name": "paws-and-pamper",
+    "path": "/data/projects/paws-and-pamper.md",
+    "metadata": {
+      "title": "Paws & Pamper – Garde et toilettage de chiens",
+      "desc": "Site vitrine professionnel pour présenter les services de garde et de toilettage canins avec une touche personnelle et chaleureuse.",
+      "miniature": "img/chien.png",
+      "icon": "fas fa-paw",
+      "type": "site",
+      "github": "#",
+      "demo": "https://marvelous-taiyaki-3bdfc0.netlify.app/",
+      "details": {
+        "context": "Un service freelance de garde et toilettage pour chiens souhaitait une présence en ligne élégante, conviviale et rassurante pour attirer et fidéliser ses clients locaux.",
+        "problematique": "Absence de vitrine digitale pour présenter l’offre, les tarifs et permettre un premier contact rapide. Le client avait besoin d’un site rassurant, professionnel, mais aussi chaleureux, aligné avec l’amour des animaux.",
+        "solution": "Création d’un site statique responsive avec HTML/CSS (Tailwind), intégrant une section de réservation, témoignages, présentation des services, formulaire de contact et navigation fluide, avec un design doux et amical (palette vert sauge, beige et doré).",
+        "gain": [
+          "Présence web professionnelle et rassurante pour les propriétaires d’animaux.",
+          "Navigation fluide et formulaire de réservation simple pour les clients.",
+          "Valorisation de l’activité avec un design personnalisé, doux et cohérent avec l’univers animalier."
+        ],
+        "technologies": [
+          "HTML",
+          "Tailwind CSS",
+          "JavaScript",
+          "Font Awesome",
+          "Unsplash",
+          "Responsive Design"
+        ]
+      }
+    },
+    "body": ""
+  },
+  {
+    "name": "synchronisation-airtable-google-sheets",
+    "path": "/data/projects/synchronisation-airtable-google-sheets.md",
+    "metadata": {
+      "title": "Synchronisation quotidienne Airtable-Google Sheets",
+      "desc": "Automatisation de la synchronisation bidirectionnelle des données entre Airtable et Google Sheets pour maintenir la cohérence.",
+      "miniature": "img/gsheet-airtable.png",
+      "icon": "fas fa-sync-alt",
+      "type": "auto",
+      "github": "https://github.com/Laseguue/Vide.git",
+      "demo": "#",
+      "details": {
+        "context": "Une entreprise utilise Airtable comme base de données principale et Google Sheets pour certaines opérations ou partages d’informations avec des équipes. Une synchronisation bidirectionnelle est nécessaire pour maintenir les données cohérentes entre les deux plateformes.",
+        "problematique": "Les données dans Airtable et Google Sheets doivent être synchronisées quotidiennement pour éviter les divergences. Les mises à jour manuelles sont chronophages et sujettes aux erreurs, surtout avec un volume important de données.",
+        "solution": "Développement d’un script Python déployé sur Google Cloud Functions, utilisant les APIs d’Airtable et de Google Sheets pour synchroniser automatiquement les données quotidiennement. Le script gère les mises à jour bidirectionnelles et résout les conflits potentiels.",
+        "gain": [
+          "Automatisation complète de la synchronisation, éliminant les interventions manuelles.",
+          "Cohérence des données entre Airtable et Google Sheets, garantissant une fiabilité pour les équipes.",
+          "Gain de temps significatif pour les utilisateurs, avec une exécution fiable et planifiée."
+        ],
+        "technologies": [
+          "Python",
+          "Google Cloud Functions",
+          "Airtable API",
+          "Google Sheets API"
+        ]
+      }
+    },
+    "body": ""
+  },
+  {
+    "name": "synchronisation-malwarebytes-airtable",
+    "path": "/data/projects/synchronisation-malwarebytes-airtable.md",
+    "metadata": {
+      "title": "Synchronisation des données Malwarebytes vers Airtable",
+      "desc": "Automatisation de la récupération et de l’association des détections Malwarebytes avec les numéros de série pour affichage sur un front web.",
+      "miniature": "img/hubspot-airtable.png",
+      "icon": "fas fa-shield-alt",
+      "type": "auto",
+      "github": "https://github.com/Laseguue/Vide.git",
+      "demo": "#",
+      "details": {
+        "context": "Une entreprise d’infogérance utilise une base de données Airtable connectée à un front web pour permettre à ses clients de visualiser des données. L’objectif est d’afficher les détections de menaces issues de Malwarebytes, un logiciel de cybersécurité, directement sur ce front.",
+        "problematique": "Malwarebytes ne fournit pas directement une association entre les détections de menaces et les numéros de série des ordinateurs (endpoints). Cette limitation complique l’identification des machines affectées. De plus, les données doivent être récupérées quotidiennement et synchronisées avec Airtable pour un affichage en temps réel sur le front web.",
+        "solution": "Développement d’un programme Python déployé sur Google Cloud Functions, utilisant l’API Malwarebytes pour récupérer quotidiennement les données des détections et les associer aux numéros de série des endpoints. Les données sont ensuite envoyées à Airtable pour mise à jour de la base et affichage sur le front web.",
+        "gain": [
+          "Automatisation complète de la récupération et de l’association des données Malwarebytes, éliminant les interventions manuelles.",
+          "Visibilité en temps réel pour les clients sur les menaces détectées, avec une association claire aux numéros de série des machines.",
+          "Amélioration de la réactivité face aux incidents de sécurité grâce à des données centralisées et accessibles."
+        ],
+        "technologies": [
+          "Python",
+          "Google Cloud Functions",
+          "Malwarebytes API",
+          "Airtable API"
+        ]
+      }
+    },
+    "body": ""
+  }
+]
