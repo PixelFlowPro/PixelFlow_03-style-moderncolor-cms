@@ -1,0 +1,132 @@
+---
+title: 'Making Claude Cowork ready for enterprise'
+source: https://claude.com/resources/articles/cowork-for-enterprise
+description: 'Claude Cowork from Anthropic is now generally available on all paid plans. Within companies, Claude Cowork has become a key part of how teams operate: handling tasks, drafting project deliverables, and keeping teams up to date. '
+scraped: 2026-10-16
+---
+
+Claude Cowork is now generally available on all paid plans. Within companies, Claude Cowork has become a key part of how teams operate: handling tasks, drafting project deliverables, and keeping teams up to date.
+
+Today, we’re introducing organization controls to help teams deploy Claude Cowork company-wide: role-based access controls for Enterprise, group spend limits, expanded OpenTelemetry observability, and usage analytics for admins to see Claude Cowork adoption.
+
+## Early signals
+
+Claude Code helped developers transition from handing Claude questions to whole tasks, and we’re seeing the same pattern across the entire organization with Claude Cowork: the vast majority of Claude Cowork usage comes from outside engineering teams. Importantly, functions like operations, marketing, finance, and legal are not handing Claude their core work, but rather the work that surrounds their most critical tasks—project updates, collaboration decks, research sprints, etc.
+
+As early enterprise adopters of Claude Cowork have seen this pattern emerge in one team, they’ve often wanted to roll it out more broadly, opening questions like who gets access, spend management, and how to see what’s happening across teams.
+
+## Controls for organization-wide deployment
+
+Deploying agents with Claude Cowork’s capabilities across an organization requires governance and visibility for admin teams. Today, we’re adding more of the controls organizations need:
+
+**Role-based access controls.** Admins on Claude Enterprise can now organize users into groups — manually or via SCIM from your identity provider — and assign each a custom role defining which Claude capabilities its members can use. Turn Claude Cowork on for specific teams and adjust as adoption grows.
+
+**Group spend limits.** Set per-team budgets from the admin console. Predictable costs, adjustable as you learn what each team needs.
+
+**Usage analytics.** Claude Cowork activity now appears in the admin dashboard and the Analytics API. From the dashboard, admins can track Claude Cowork sessions and active users across various date ranges. The Analytics API goes deeper: per-user Claude Cowork activity, skill and connector invocations, and DAU/WAU/MAU alongside existing Chat and Claude Code figures. See which teams are adopting, which workflows are landing, and where to invest next.
+
+**Expanded OpenTelemetry support.** Claude Cowork now emits events for tool and connector calls, files read or modified, skills used, and whether each AI-initiated action was approved manually or automatically. Events are compatible with standard SIEM pipelines like Splunk and Cribl, and a shared user account identifier lets you correlate OTEL events with Compliance API records. OpenTelemetry is available on Team and Enterprise plans.
+
+**Zoom MCP connector.** Claude Cowork integrates with the tools your teams already use. Today, Zoom is launching a connector that brings meeting intelligence directly into the Cowork experience. The Zoom connector delivers AI Companion meeting summaries and action items alongside transcripts and smart recordings — helping teams use their conversations on Zoom to create agentic workflows in Cowork. Add Zoom from the connector directory in Claude's settings.
+
+**Per tool connector controls.** Admins can now restrict which actions are available within each MCP connector across the organization — allowing read access but disabling write operations, for example. Permissions apply org-wide and are configured from the admin console.
+
+## How organizations use Claude Cowork
+
+[Zapier](https://claude.com/customers/zapier-cowork-qa) connected Cowork to their org database, Slack, and Jira to surface engineering bottlenecks—getting back a dashboard, team-by-team analyses, and a prioritized roadmap that Product and Design Ops then copied for themselves. [Jamf](https://claude.com/customers/jamf) turned a seven-facet performance review into a 45-minute guided self-evaluation, then built similar workflows for vendor reviews and incident response. [Airtree](https://claude.com/customers/airtree), a venture firm, built a board prep workflow that pulls from a portfolio company's Drive, Slack updates, and competitor news, cross-referenced against the previous prep.
+
+![Jamf](https://assets.claude.com/6525757ec4c3fc79978ca32c81251db6edcf286d.svg)
+
+> “People across the org are using Cowork for data blending, analysis, and dashboard building. Bespoke dashboarding has been huge. Tasks that previously required a BI tool or an engineer's help, people are now doing themselves in minutes.”
+
+Nick Benyo, Software Engineer
+
+![Airtree](https://assets.claude.com/0a4af388f451cefedf61dba15d9f73962a46c700.png)
+
+> “Using Claude Cowork across teams multiplied its value. Skills built by one person could be used by everyone. Claude Cowork became shared firm infrastructure rather than just an individual productivity tool.”
+
+Jackie Vullinghs, Partner
+
+![Thomson Reuters](https://assets.claude.com/3c80d8dc7dbf6556d1137977873dee26eaffae1d.svg)
+
+> “Claude Cowork helps teams do work at a scale that was hard to justify before. The human role becomes validation, refinement, and decision-making. Not repetitive rework.”
+
+Joel Hron, CTO
+
+![Zapier](https://assets.claude.com/76ec34d2d040fb1dd2dd94a7950788e0a82a09b6.svg)
+
+> “The barrier between "having an idea" and "shipping something" has collapsed. The skill that matters now isn't knowing how to do every step. It's knowing clearly what you're trying to accomplish and being able to direct toward that outcome. Execution is still real work, but the ceiling on what one person can ship has moved dramatically. I genuinely cannot remember doing my job without it.”
+
+Larisa Cavallaro, AI Automation Engineer
+
+![Jamf](https://assets.claude.com/6525757ec4c3fc79978ca32c81251db6edcf286d.svg)
+
+> “People across the org are using Cowork for data blending, analysis, and dashboard building. Bespoke dashboarding has been huge. Tasks that previously required a BI tool or an engineer's help, people are now doing themselves in minutes.”
+
+Nick Benyo, Software Engineer
+
+![Airtree](https://assets.claude.com/0a4af388f451cefedf61dba15d9f73962a46c700.png)
+
+> “Using Claude Cowork across teams multiplied its value. Skills built by one person could be used by everyone. Claude Cowork became shared firm infrastructure rather than just an individual productivity tool.”
+
+Jackie Vullinghs, Partner
+
+![Thomson Reuters](https://assets.claude.com/3c80d8dc7dbf6556d1137977873dee26eaffae1d.svg)
+
+> “Claude Cowork helps teams do work at a scale that was hard to justify before. The human role becomes validation, refinement, and decision-making. Not repetitive rework.”
+
+Joel Hron, CTO
+
+![Zapier](https://assets.claude.com/76ec34d2d040fb1dd2dd94a7950788e0a82a09b6.svg)
+
+> “The barrier between "having an idea" and "shipping something" has collapsed. The skill that matters now isn't knowing how to do every step. It's knowing clearly what you're trying to accomplish and being able to direct toward that outcome. Execution is still real work, but the ceiling on what one person can ship has moved dramatically. I genuinely cannot remember doing my job without it.”
+
+Larisa Cavallaro, AI Automation Engineer
+
+![Jamf](https://assets.claude.com/6525757ec4c3fc79978ca32c81251db6edcf286d.svg)
+
+> “People across the org are using Cowork for data blending, analysis, and dashboard building. Bespoke dashboarding has been huge. Tasks that previously required a BI tool or an engineer's help, people are now doing themselves in minutes.”
+
+Nick Benyo, Software Engineer
+
+![Airtree](https://assets.claude.com/0a4af388f451cefedf61dba15d9f73962a46c700.png)
+
+> “Using Claude Cowork across teams multiplied its value. Skills built by one person could be used by everyone. Claude Cowork became shared firm infrastructure rather than just an individual productivity tool.”
+
+Jackie Vullinghs, Partner
+
+1/4
+
+## Getting started
+
+Claude Cowork and Claude Code on Desktop are generally available today on all paid plans on macOS and Windows. Download the Claude desktop app at [claude.com/download](http://claude.com/download).
+
+For admins deploying Claude across your organization: [configure role-based access controls](https://support.claude.com/en/articles/13930458-set-up-role-based-permissions-on-enterprise-plans), group spend limits and [OpenTelemetry](https://claude.com/docs/cowork/monitoring) from the [admin console](https://claude.com/settings/admin). Claude Cowork usage data is available in the admin dashboard, and the Analytics API is documented [here](https://support.claude.com/en/articles/13694757-access-engagement-and-adoption-data-with-the-analytics-api).
+
+For a deployment walkthrough, join our April 16th [webinar](https://claude.com/resources/webinars/deploying-cowork-across-the-enterprise-with-paypal) with PayPal.
+
+[ArticleOct 15, 2026
+
+### Code Review is now generally available
+
+Catch more bugs before they reach production.
+
+Claude Code](/resources/articles/code-review-is-now-generally-available)[ArticleOct 8, 2026
+
+### Build live dashboards and animate explainers with Claude
+
+Claude Dashboards and Claude Motion are now in beta. Docs, Slides, and Design are out of beta and on every Claude plan, including Free.
+
+Claude appsClaude Design2 more: Claude Cowork and Claude CodeClaude CoworkClaude Code](/resources/articles/dashboards-and-motion)[ArticleOct 7, 2026
+
+### Claude Haiku 5.5
+
+Introducing Claude Haiku 5.5: the cheapest, fastest, and most capable small model we’ve ever released.
+
+(opens in new tab)](https://www.anthropic.com/claude-haiku-5-5)[ArticleOct 6, 2026
+
+### Claude now works with Google Docs, Sheets, and Slides
+
+Teams that run on Google Workspace can now bring Claude into their files or work on their files directly from Claude, with our new add-on and Google Docs, Sheets, and Slides connectors (in beta).
+
+Claude Enterprise](/resources/articles/claude-now-works-in-google-docs-sheets-and-slides)

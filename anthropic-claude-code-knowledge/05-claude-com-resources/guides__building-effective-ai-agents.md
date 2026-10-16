@@ -1,0 +1,16 @@
+---
+title: 'Building effective AI agents: Architecture patterns'
+source: https://claude.com/resources/guides/building-effective-ai-agents
+description: 'Learn how to build AI agents that deliver business value: single-agent and multi-agent architecture patterns, agentic workflows, and a decision framework.'
+scraped: 2026-10-16
+---
+
+# Building Effective AI Agents: Architecture Patterns and Implementation Frameworks
+
+Accelerate your enterprise AI transformation with proven strategies from Anthropic's customers and internal teams.
+
+For companies across industries, agents offer the potential for scaling operations in ways current automation could never deliver: open-ended problem-solving, dynamic decision-making, and complex multistep processes where the path forward isn't predetermined. This guide covers real-world use cases, architecture patterns from single agents to multi-agent orchestration, and a decision framework for matching the right pattern to your use case.
+
+[Start reading](/resources/guides/building-effective-ai-agents/executive-summary)[Download now](https://assets.claude.com/60433f5575ffbd2e55712e1ddb6d2bdb7bada56b.pdf?dl=)
+
+63 min read

@@ -1,0 +1,57 @@
+---
+title: 'Apple’s Xcode now supports the Claude Agent SDK'
+source: https://www.anthropic.com/news/apple-xcode-claude-agent-sdk
+description: 'Xcode 26.3 integrates the Claude Agent SDK, letting developers use Claude for autonomous, long-running coding tasks on Apple platforms.'
+scraped: 2026-10-16
+---
+
+Product
+
+# Apple’s Xcode now supports the Claude Agent SDK
+
+Feb 3, 2026
+
+![Apple’s Xcode now supports the Claude Agent SDK](https://www-cdn.anthropic.com/images/4zrzovbb/website/f8f4644253bde2f901550431b871b6dcf91e5d9d-1000x1000.svg)
+
+Apple's Xcode is where developers build, test, and distribute apps for Apple platforms, including iPhone, iPad, Mac, Apple Watch, Apple Vision Pro, and Apple TV.
+
+In September, [we announced](https://www.anthropic.com/news/claude-in-xcode) that developers would have access to Claude Sonnet 4 in Xcode 26. Claude could be used to write code, debug, and generate documentation—but it was limited to helping with individual, turn-by-turn requests.
+
+Now, Xcode 26.3 introduces a native integration with the [Claude Agent SDK](https://platform.claude.com/docs/en/agent-sdk/overview), the same underlying harness that powers Claude Code. Developers get the full power of Claude Code directly in Xcode—including subagents, background tasks, and plugins—all without leaving the IDE.
+
+[](https://cdn.sanity.io/files/4zrzovbb/website/d5b483d2e9f92f93e24d087b5becfe39abc3a47d.mov)
+
+Claude Agent in Xcode
+
+## **Using Claude for long-running, autonomous work in Xcode**
+
+With the Claude Agent SDK, Claude can now work autonomously on much more sophisticated, long-running coding tasks inside Xcode. Specifically, this integration supports:
+
+- **Visual verification with Previews.** With the new integration, Claude can capture Xcode Previews to see what the interface it’s building looks like in practice, identify any issues with what it sees, and iterate from there. This is particularly useful when building SwiftUI views, where the visual output is the thing that matters most. Claude can close the loop on its own implementation, allowing it to build higher-quality interfaces that are much closer to developers’ design intent on the first try.
+- **Reasoning across projects.** Building for Apple platforms means working with a wide range of frameworks and technologies, like SwiftUI, UIKit, Swift Data, and many more. Claude can explore a project's full file structure, understand how these pieces connect, and identify where changes need to be made before it starts writing code. When given a task, it works with an understanding of the whole app and its architecture – not just whichever file is currently open.
+- **Autonomous task execution.** Claude can be given a *goal*, rather than a set of specific instructions. It’ll then break the task down itself, decide which files to modify, make the changes, and iterate if something doesn't work. When Claude needs to understand how an Apple API works, or how a specific framework is meant to be used, it can search Apple's documentation directly. And it can update the project as needed and continue until the task is complete or it needs a user’s input—a meaningful time saver for developers who are often working alone or on small teams.
+- **Interface through the Model Context Protocol.** In addition to accessing Claude Agent directly within the IDE, Xcode 26.3 also makes its capabilities available through the Model Context Protocol. Developers using Claude Code can integrate with Xcode over MCP and capture visual Previews without leaving the CLI.
+
+## **Availability**
+
+Xcode 26.3 is available as a release candidate for all members of the Apple Developer Program starting today, with a release coming soon on Apple’s App Store. See Apple’s announcement [here for more](https://www.apple.com/newsroom/2026/02/xcode-26-point-3-unlocks-the-power-of-agentic-coding/).
+
+## Related content
+
+### An update on independent evaluators
+
+To evaluate the safety of our systems, Anthropic is giving employee-like access to a team from METR, a nonprofit that evaluates frontier AI models, and we're in early discussions with several other organizations, including Hugging Face.
+
+[Read more](/news/an-update-on-independent-evaluators)
+
+### Preparing for the 2026 US midterms
+
+Earlier this year, we shared an update on our election safeguards. Here, we outline how we’ve continued to strengthen these safeguards ahead of this year’s US midterms.
+
+[Read more](/news/2026-us-midterms)
+
+### Anthropic opens Singapore office and signs MOU with the Government of Singapore
+
+Anthropic has opened an office in Singapore and signed an MOU with the country’s government to advance safe, responsible AI adoption.
+
+[Read more](/news/singapore-office-opening)
